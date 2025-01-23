@@ -1,3 +1,6 @@
+## 2.3.1
+* feat: Add page title.
+
 ## 2.3.0
 * Update dependencies and compileSdkVersion to latest versions
 
