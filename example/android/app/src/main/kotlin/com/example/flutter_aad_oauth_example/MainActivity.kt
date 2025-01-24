@@ -1,4 +1,4 @@
-package com.example.flutter_aad_oauth_example
+package com.example.azure_oauth_example
 
 import io.flutter.embedding.android.FlutterActivity
 

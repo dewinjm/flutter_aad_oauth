@@ -1,9 +1,9 @@
 // ignore_for_file: constant_identifier_names
 
+import 'package:azure_oauth/azure_oauth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:flutter_aad_oauth/flutter_aad_oauth.dart';
-import 'package:flutter_aad_oauth/model/config.dart';
+import 'package:azure_oauth/model/config.dart';
 
 void main() => runApp(const MyApp());
 
@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
   static const String CLIENT_ID = 'YOUR_CLIENT_ID';
 
   late Config config;
-  late FlutterAadOauth oauth = FlutterAadOauth(config);
+  late AzureOauth oauth = AzureOauth(config);
 
   @override
   initState() {
@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
         redirectUri: '$redirectUri',
         responseType: responseType);
 
-    oauth = FlutterAadOauth(config);
+    oauth = AzureOauth(config);
     oauth.setContext(context);
     checkIsLogged();
     super.initState();

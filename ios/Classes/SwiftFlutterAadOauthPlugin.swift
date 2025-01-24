@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftFlutterAadOauthPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_aad_oauth", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "azure_oauth", binaryMessenger: registrar.messenger())
     let instance = SwiftFlutterAadOauthPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }

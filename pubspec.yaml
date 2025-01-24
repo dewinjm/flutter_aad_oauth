@@ -1,8 +1,8 @@
-name: flutter_aad_oauth
+name: azure_oauth
 description: A Flutter OAuth package for performing user authentication against Azure Active Directory OAuth2 v2.0 endpoint.
 version: 2.3.1
-homepage: https://github.com/dewinjm/flutter_aad_oauth
-repository: https://github.com/dewinjm/flutter_aad_oauth
+homepage: https://github.com/dewinjm/azure_oauth
+repository: https://github.com/dewinjm/azure_oauth
 
 environment:
   sdk: ">=2.16.1 <4.0.0"

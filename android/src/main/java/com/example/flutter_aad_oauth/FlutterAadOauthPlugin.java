@@ -1,4 +1,4 @@
-package com.example.flutter_aad_oauth;
+package com.example.azure_oauth;
 
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -10,7 +10,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar;
 public class FlutterAadOauthPlugin implements MethodCallHandler {
   /** Plugin registration. */
   public static void registerWith(Registrar registrar) {
-    final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_aad_oauth");
+    final MethodChannel channel = new MethodChannel(registrar.messenger(), "azure_oauth");
     channel.setMethodCallHandler(new FlutterAadOauthPlugin());
   }
 

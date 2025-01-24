@@ -13,7 +13,7 @@ import 'request_code.dart';
 import 'request_token.dart';
 import 'request_token_web.dart';
 
-class FlutterAadOauth {
+class AzureOauth {
   static late Config _config;
   AuthStorage? _authStorage;
   Token? _token;
@@ -22,8 +22,8 @@ class FlutterAadOauth {
   late RequestToken _requestToken;
   late String tokenIdentifier;
 
-  FlutterAadOauth(config, {this.tokenIdentifier = ''}) {
-    FlutterAadOauth._config = config;
+  AzureOauth(config, {this.tokenIdentifier = ''}) {
+    AzureOauth._config = config;
     _authStorage = _authStorage ?? AuthStorage(tokenIdentifier: tokenIdentifier);
     if (kIsWeb) {
       _requestTokenWeb = RequestTokenWeb(_config);
@@ -107,7 +107,7 @@ class FlutterAadOauth {
       await _requestCode.clearCookies();
     }
     _token = null;
-    FlutterAadOauth(_config);
+    AzureOauth(_config);
   }
 
   Future<void> _performAuthorization() async {

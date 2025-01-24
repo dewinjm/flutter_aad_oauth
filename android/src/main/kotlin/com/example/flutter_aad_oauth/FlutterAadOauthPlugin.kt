@@ -1,4 +1,4 @@
-package com.example.flutter_aad_oauth
+package com.example.azure_oauth
 
 import androidx.annotation.NonNull
 
@@ -17,7 +17,7 @@ class FlutterAadOauthPlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "flutter_aad_oauth")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "azure_oauth")
     channel.setMethodCallHandler(this)
   }
 

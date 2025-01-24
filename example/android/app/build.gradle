@@ -32,7 +32,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.example.flutter_aad_oauth_example"
+        applicationId "com.example.azure_oauth_example"
         minSdkVersion 20
         targetSdkVersion 31
         versionCode flutterVersionCode.toInteger()

@@ -1,6 +1,6 @@
-# flutter_aad_oauth_example
+# azure_oauth_example
 
-Demonstrates how to use the flutter_aad_oauth plugin.
+Demonstrates how to use the azure_oauth plugin.
 
 ## Getting Started
 

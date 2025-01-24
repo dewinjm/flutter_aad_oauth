@@ -12,7 +12,7 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 class FlutterAadOauthWeb {
   static void registerWith(Registrar registrar) {
     final MethodChannel channel = MethodChannel(
-      'flutter_aad_oauth',
+      'azure_oauth',
       const StandardMethodCodec(),
       registrar,
     );
@@ -31,7 +31,7 @@ class FlutterAadOauthWeb {
       default:
         throw PlatformException(
           code: 'Unimplemented',
-          details: 'flutter_aad_oauth for web doesn\'t implement \'${call.method}\'',
+          details: 'azure_oauth for web doesn\'t implement \'${call.method}\'',
         );
     }
   }
